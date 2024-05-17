@@ -1,0 +1,25 @@
+#-------------------------------------------------------------------------------------------------------------------
+# Prettier-specific overrides
+#-------------------------------------------------------------------------------------------------------------------
+
+# Package manager files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+shrinkwrap.json
+
+# Build outputs
+dist
+lib
+
+# Prettier reformats code blocks inside Markdown, which affects rendered output
+*.md
+
+# Custom
+node_modules
+cdk.out
+tools/*
+
+# Prettier doesn't work well with yaml
+# https://github.com/prettier/prettier/issues/9853
+*.yaml
